@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Kiosco 6to 1</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedorPrincipal">
+      <div class="nuevaVenta">
+        <form action="#" id="formulario" class="formulario">
+          <h2>Nueva venta</h2>
+          <label for="">Vendedor</label>
+          <input type="text" class="form-control" name="" id="vendedor">
+          <label for="">Producto</label>
+          <input type="text" class="form-control" name="" id="producto">
+          <label for="">Precio Unidad</label>
+          <input type="text" class="form-control" name="" id="precioUnidad">
+          <label for="">Cantidad</label>
+          <input type="text" class="form-control" name="" id="cantidad">
+          <button type="submit" class="btn btnagregar" id="btnAgregar">Agregar</button>
+        </form>
+      </div>
+
+      <div class="ventas">
+          <div class="tituloVenta">
+            <h1>Todas las ventas<h1>
+          </div>
+          <div class="inputBuscar">
+            <label for="">Buscar:</label>
+            <input type="text" class="form-control" id="filter" />
+          </div>
+          <table>
+            <thead>
+              <th>Vendedor</th>
+              <th>Producto</th>
+              <th>Precio u</th>
+              <th>Cantidad</th>
+              <th>Total</th>
+              <th>Acciones</th>
+            </thead>
+              <tbody id="list_datos" class="list_datos"></tbody>
+          </table>
+          <div id="modal-container" class="modal-container"></div>
+          <header>
+            <div class="acciones">
+              <button id="botonVendedor" class="btn btnVendedor">Vendedor ➕</button>
+              <button id="botonProducto" class="btn botonProducto">Producto ➕</button>
+              <button id="total" class="btn botonTotal">Total🟰</button>
+            </div>
+          </header>
+        </div>
+    </div>
+
+  <script src="app.js"></script>
+  <script src="modal.js"></script>
+</body>
+</html>

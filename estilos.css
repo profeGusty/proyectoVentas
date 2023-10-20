@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,button,input{
+    font-family: 'Martian Mono', monospace;
+}
+
+.contenedorPrincipal{    
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.nuevaVenta{
+    /* width: 20%; */
+    margin-top: 100px;
+    position: relative;
+}
+
+.formulario{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    height: 400px;
+    border: 1px solid grey;
+}
+.nuevaVenta h2{
+    text-align: center;
+}
+.nuevaVenta input{
+    width: 100%;
+    padding: 5px;
+}
+.nuevaVenta label{
+    margin-top: 15px;
+}
+.btn{
+    margin-top: 1rem;
+    padding: 12px;
+    width: 200px;
+    border: none;
+    background-color: blueviolet;
+    border-radius: .7rem;
+    color: #fff;
+    cursor: pointer;
+}
+.btnagregar{
+    width: 100%;
+}
+
+/* ------------------------------------------------------ */
+.ventas{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    /* max-height: 60vh;  */
+    overflow-y: scroll;
+    height: 95vh;
+}
+.tituloVenta h1{
+    text-align: center;
+    padding-bottom:10px ;
+}
+.inputBuscar{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid grey;
+    border-bottom: none;
+}
+.inputBuscar input{
+    width: 80%;
+    padding: 10px;
+}
+table{
+    border: 1px solid grey;
+    min-height: 20vh;
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+}
+thead th{
+    padding: 10px;
+    background-color: blueviolet;
+    text-align: center;
+    color: #fff;
+}
+tbody td{
+    padding: 3px;
+}
+tbody td:last-child{
+    text-align: center;
+}
+.btnEliminar,.btnMostrar{
+    cursor: pointer;
+}
+.acciones{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header{
+    /* border: 1px solid red; */
+    position: sticky;
+    bottom: 0;
+}
+
+/*---------------------- MODAL-------------------  */
+/*modal content*/
+.modal-container {
+    width: 50%;
+    margin: auto;
+    max-height: 400px;
+    color: #000;
+    font-size: 1.1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*for the top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    inset: 0;
+    scrollbar-color: none;
+    border: 1px solid blueviolet;
+    border-radius: 1rem;
+    display: none;
+  }
+  
+  .modal-container::-webkit-scrollbar {
+    display: none;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    color: #fff;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.modal-header-title {
+    justify-self: start;
+}
+
+.modal-header-button {
+    cursor: pointer;
+    color: red;
+}
+
+.modal-container > .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 1rem;
+    width: 70%;
+    margin: 10px;
+  }
+
+  .modal-container > .modal-content p{
+    padding: 1rem;
+  }
+
+  .accionesbtn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .contenedorPrincipal{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .nuevaVenta{
+        margin-top: 1rem;
+        position: relative;
+    }
+
+    .ventas{
+        width: 100%;
+        margin: 1rem auto;
+        height: auto;
+    }
+    .tituloVenta h1{
+        padding: 1rem;
+        padding-bottom: 1px;
+        font-size: 1.5rem;
+    }
+    .inputBuscar{
+        padding: .3rem;
+    }
+    .inputBuscar input{
+        width: 100%;
+        padding: 10px;
+    }
+
+    table{
+        min-height: 20vh;
+        width: 100%;
+        padding: .1rem;
+        font-size: .5rem;
+    }
+    thead th{
+        padding: 3px;
+    }
+    tbody td{
+        padding: 0px;
+    }
+    .btn{
+        font-size: .6rem;
+        margin-top: 1rem;
+        padding: 5px 1px;
+        width: 100px;
+        border-radius: .3rem;
+    }
+   
+  }
