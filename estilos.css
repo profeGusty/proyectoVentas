@@ -143,6 +143,7 @@ header{
   .modal-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: blueviolet;
     color: #fff;
     width: 100%;
@@ -226,5 +227,31 @@ header{
         width: 100px;
         border-radius: .3rem;
     }
-   
+    .modal-container {
+        width: 60%;
+        max-height: 20rem;
+        font-size: .9rem;
+        display: none;
+    }
+    .modal-header {
+        padding: 1.1rem;
+    }
+    .modal-header-title {
+        font-size: 1rem;
+    }
+    .modal-container > .modal-content { 
+        padding: .1rem;
+        width: 100%;
+        gap: 1rem;
+        margin: 0px;
+      }
+    
+      .modal-container > .modal-content p{
+        padding: 1px;
+        font-size: .9rem;
+        margin-top: 10px;
+      }
+      .modal-header-button {
+        font-size:1.5rem;
+    }
   }
