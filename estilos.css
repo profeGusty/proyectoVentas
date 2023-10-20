@@ -117,7 +117,7 @@ header{
 /*---------------------- MODAL-------------------  */
 /*modal content*/
 .modal-container {
-    width: 50%;
+    width: 30%;
     margin: auto;
     max-height: 400px;
     color: #000;
