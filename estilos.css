@@ -179,7 +179,7 @@ header{
     font-size: 1.1rem;
   }
   
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 760px) {
     .contenedorPrincipal{ 
         display: flex;
         flex-direction: column;
